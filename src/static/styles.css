@@ -63,6 +63,69 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(26, 35, 126, 0.06);
+  transition: box-shadow 0.2s;
+}
+
+.activity-card:hover {
+  box-shadow: 0 4px 16px rgba(26, 35, 126, 0.13);
+}
+
+.participants-section {
+  margin-top: 10px;
+  padding: 10px;
+  background: #eef3fb;
+  border-radius: 4px;
+  border: 1px solid #c5cae9;
+}
+
+.participants-section strong {
+  color: #3949ab;
+  font-size: 15px;
+}
+
+.participants-list {
+  margin: 8px 0 0 0;
+  padding-left: 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.participants-list.no-bullets {
+  list-style: none;
+}
+
+.participant-name {
+  margin-right: 10px;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c62828;
+  margin-left: 4px;
+  font-size: 17px;
+  vertical-align: middle;
+  transition: color 0.2s;
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.delete-participant:hover {
+  background: #ffebee;
+  color: #fff;
+  background-color: #c62828;
+}
+
+.participants-section.empty {
+  background: #f9f9f9;
+  border: 1px dashed #bdbdbd;
+}
+
+.no-participants {
+  color: #888;
+  font-style: italic;
+  margin-left: 6px;
+  font-size: 14px;
 }
 
 .activity-card h4 {
